@@ -50,7 +50,7 @@
               </div>
               <div>
                 <Chip :type="!transaction.isIncome ? 'danger': 'success'">
-                   In
+                  in
                 </Chip>
               </div>
 
