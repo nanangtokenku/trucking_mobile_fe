@@ -23,7 +23,7 @@ export const useTransactionStore = defineStore('transaction', {
       //     total += item.amount
       //   }
       // })
-      return "0"; //total
+      return "500"; //total
     },
     totalIncome: state => {
       let total = 0

@@ -93,7 +93,8 @@ const onlogin = async () => {
             type: 'error',
             show: true
         })
-        console.log(err)
+        //console.log(err)
+        alert("Login Failed");
     })
 }
 </script>
