@@ -67,7 +67,7 @@ const onlogin = async () => {
     }
     })
     .then(res => {
-        alert(res.data.token);
+        
         localStorage.setItem('isAuthenticated', true)
         localStorage.setItem('token', res.data.token)
 
@@ -93,7 +93,7 @@ const onlogin = async () => {
             type: 'error',
             show: true
         })
-        //console.log(err)
+        
         alert("Login Failed");
     })
 }
