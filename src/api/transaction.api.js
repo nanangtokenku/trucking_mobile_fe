@@ -1,4 +1,7 @@
 import axios from '@/middleware'
+import apiKey from '../modules/config'
+
+
 const user = localStorage.getItem('token')
 // eslint-disable-next-line no-undef
 
@@ -7,7 +10,7 @@ export function getTransactions ()
 {
     //return axios.get(res, { headers: { Authorization: `Bearer ${user}` } })
     return axios.get(res, { headers: { 
-        'x-api-key': 'A7980EB02ADE9DD9FD90DDAB0AEF1676',
+        'x-api-key': apiKey,
         'x-token': localStorage.getItem('token')
     } })
 }

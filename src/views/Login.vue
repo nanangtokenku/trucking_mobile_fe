@@ -34,6 +34,7 @@ import { useAuth } from '@/store/auth';
 import { useCommonStore } from '@/store/index'
 import axios from '@/middleware'
 import qs from 'qs'
+import apiKey from '../modules/config'
 
 
 const router = useRouter();
@@ -58,7 +59,7 @@ const onlogin = async () => {
     {
     headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        "x-api-key": 'A7980EB02ADE9DD9FD90DDAB0AEF1676'
+        "x-api-key": apiKey
     }
     })
     .then(res => {
