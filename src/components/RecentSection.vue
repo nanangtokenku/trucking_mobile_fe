@@ -55,7 +55,7 @@
               </div>
 
               <a
-                href="#"
+                href="javascript:void(0)" @click="klikMenu(transaction.namamenu)"
                 :class="[
                   'absolute inset-0 rounded-md',
                   'focus:z-10 focus:outline-none focus:ring-2 ring-primary-lighter',
@@ -78,6 +78,8 @@ import { useTransactionStore } from '@/store/transaction';
 import useDateFormat from '@/composables/useDateFormat'
 import usePriceFormat from '@/composables/usePriceFormat';
 import Chip from '@/components/Chip.vue'
+import router from '../router/index';
+
 const transactionStore = useTransactionStore();
 const { allTransaction, incomeTransaction, outComeTransaction } = storeToRefs(transactionStore);
 
@@ -87,4 +89,8 @@ const categories = ref({
   Laporan: outComeTransaction
 })
 
+function klikMenu(namamn) {
+  console.log('menu clicked at ' + namamn)
+  router.push({ path: '/add-outcome' })
+}
 </script>
