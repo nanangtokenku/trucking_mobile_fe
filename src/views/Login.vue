@@ -54,11 +54,6 @@ const onlogin = async () => {
         password: password.value
       }
     await axios.post('/user/login',
-    // {
-    //     username: identifier.value,
-    //     password: password.value
-    // },
-
     qs.stringify(formData),
     {
     headers: {
