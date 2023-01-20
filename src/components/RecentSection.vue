@@ -82,7 +82,7 @@ const transactionStore = useTransactionStore();
 const { allTransaction, incomeTransaction, outComeTransaction } = storeToRefs(transactionStore);
 
 const categories = ref({
-  SemuaMenu: allTransaction,
+  "Semua Menu": allTransaction,
   Accounting: incomeTransaction,
   Laporan: outComeTransaction
 })
