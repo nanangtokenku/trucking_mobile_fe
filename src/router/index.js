@@ -26,6 +26,11 @@ const routes = [
     name: 'AddOutcome',
     component: () => import('../views/AddOutcome.vue'),
   },
+  {
+    path: '/menu/:id',
+    name: 'menu',
+    component: () => import('../views/AddOutcome.vue')
+  }
 ]
 
 const router = createRouter({

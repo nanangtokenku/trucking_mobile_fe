@@ -50,17 +50,17 @@
               </div>
               <div>
                 <Chip :type="!transaction.isIncome ? 'danger': 'success'">
-                  in
+                  
+              <router-link :to="{path: '/menu/' + transaction.namamenu}">View </router-link>
                 </Chip>
               </div>
-
-              <a
-                href="javascript:void(0)" @click="klikMenu(transaction.namamenu)"
+              <!-- <a
+                href="javascript:void(0)" @click="klikMenu('testing')"
                 :class="[
                   'absolute inset-0 rounded-md',
                   'focus:z-10 focus:outline-none focus:ring-2 ring-primary-lighter',
                 ]"
-              />
+              /> -->
             </li>
           </ul>
           <span v-else>Belum ada transaksi...</span>
@@ -89,8 +89,4 @@ const categories = ref({
   Laporan: outComeTransaction
 })
 
-function klikMenu(namamn) {
-  console.log('menu clicked at ' + namamn)
-  router.push({ path: '/add-outcome' })
-}
 </script>
