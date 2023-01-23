@@ -89,4 +89,9 @@ const categories = ref({
   Laporan: outComeTransaction
 })
 
+function klikMenu(name) {
+  console.log('menu clicked at name route ' + name)
+  
+  router.push({ path: name })
+}
 </script>

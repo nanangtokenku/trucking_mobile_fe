@@ -1,5 +1,45 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
+//import VueRouter from 'vue-router'
+// const routes = []
+
+// const requestOptions = {
+//   method: "GET",
+//   withCredentials: true,
+//   headers: {
+//     //"Content-Type": "application/json",
+//     "x-api-key":"A7980EB02ADE9DD9FD90DDAB0AEF1676",
+//     "x-token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImlkIjoiMzE5OCJ9LCJpYXQiOjE2NzQ0MzYyOTQsImV4cCI6MTY3NDUyMjY5NH0.IkuqwfBY3dCJxUEFMZ3L4bg3AHu1TsuWPCcYFVCN8v4'
+//   },
+//   body: null,
+// };
+
+// let response = await fetch(
+//   "https://pps-stie-nobel.org/api/truck_menu/all",
+//   requestOptions
+// )
+// .then(response => response.json())
+//   .then(data => {
+
+//       routes.push({
+//         path: '/',
+//         name: 'Home',
+//        component: () => import('../views/Home.vue'),
+//       })
+
+//        data.data.truck_menu.forEach((item, index) => {
+      
+//           routes.push({
+//             path: item.path,
+//             name: "AAA",
+//             //component: require(`./views/${item.component}.vue`),
+//             component: () => import('../views/AddIncome.vue'),
+//           })
+//       })
+//   })
+
+
+
 const routes = [
   {
     path: '/',
