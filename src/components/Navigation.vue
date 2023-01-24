@@ -83,7 +83,7 @@ const store = useAuth()
 
 const logout = () => {
   localStorage.removeItem('isAuthenticated')
-  localStorage.removeItem('token')
+  localStorage.removeItem('truckingToken')
   store.$reset()
   router.push('/login')
 }
