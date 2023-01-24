@@ -9,7 +9,7 @@ const requestOptions = {
   headers: {
     //"Content-Type": "application/json",
     "x-api-key": apiKey,
-    "x-token": localStorage.getItem('token')
+    "x-token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImlkIjoiMzE5OCJ9LCJpYXQiOjE2NzQ1MzE0NTIsImV4cCI6MTY3NDYxNzg1Mn0.r9dKcG-nNc4phfYQlRpnwChmazxcsIegAeAnX6tFDJ4'
   },
   body: null,
 };

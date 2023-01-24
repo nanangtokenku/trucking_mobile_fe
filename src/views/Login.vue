@@ -65,7 +65,7 @@ const onlogin = async () => {
     .then(res => {
         
         localStorage.setItem('isAuthenticated', true)
-        localStorage.setItem('token', res.data.token)
+        localStorage.setItem('truckingToken', res.data.token)
 
         store.$patch({
             isAuthenticated: true,

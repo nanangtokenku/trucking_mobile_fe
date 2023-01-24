@@ -11,7 +11,7 @@ export function getTransactions ()
     //return axios.get(res, { headers: { Authorization: `Bearer ${user}` } })
     return axios.get(res, { headers: { 
         'x-api-key': apiKey,
-        'x-token': localStorage.getItem('token')
+        'x-token': localStorage.getItem('truckingToken')
     } })
 }
 
