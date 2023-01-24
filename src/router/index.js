@@ -32,6 +32,12 @@ let response = await fetch(
         component: () => import('../views/Login.vue'),  
     }),
 
+    routes.push({
+      path: '/AddOutcome',
+        name: 'AddOutcome',
+        component: () => import('../views/AddOutcome.vue'),  
+    }),
+
     data.data.truck_menu.forEach((item, index) => {
       
           routes.push({
