@@ -33,6 +33,13 @@ let response = await fetch(
         component: () => import('../views/Login.vue'),  
     }),
 
+
+    routes.push({
+      path: '/register',
+        name: 'Register',
+        component: () => import('../views/Register.vue'),  
+    }),
+
     routes.push({
       path: '/AddOutcome',
         name: 'AddOutcome',
@@ -45,7 +52,7 @@ let response = await fetch(
             path: item.path,
             name: "AAA",
             //component: require(`./views/${item.component}.vue`),
-            component: () => import('../views/AddIncome.vue'),
+            component: () => import(`../views/${item.component}.vue`),
           })
       })
   })
