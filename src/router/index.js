@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+import apiKey from '../modules/config'
 
 const routes = []
 
@@ -7,8 +8,8 @@ const requestOptions = {
   withCredentials: true,
   headers: {
     //"Content-Type": "application/json",
-    "x-api-key":"A7980EB02ADE9DD9FD90DDAB0AEF1676",
-    "x-token": 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjp7ImlkIjoiMzE5OCJ9LCJpYXQiOjE2NzQ1MjUzNzksImV4cCI6MTY3NDYxMTc3OX0.NSjrCMix2ByxK709UGm9nQXHOQo7r9X8knjPLzvqKO4'
+    "x-api-key": apiKey,
+    "x-token": localStorage.getItem('token')
   },
   body: null,
 };
