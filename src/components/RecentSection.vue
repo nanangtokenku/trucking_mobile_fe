@@ -51,7 +51,7 @@
               <div>
                 <Chip :type="!transaction.isIncome ? 'danger': 'success'">
                   
-              <router-link :to="{path: '/menu/' + transaction.namamenu}">View </router-link>
+              <router-link :to="{path:  transaction.path}">View </router-link>
                 </Chip>
               </div>
               <!-- <a
