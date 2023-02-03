@@ -15,7 +15,7 @@ const requestOptions = {
 };
 
 let response = await fetch(
-  "https://pps-stie-nobel.org/api/truck_menu/all",
+  "https://pps-stie-nobel.org/api/nobel_mm_uji_hasil/all",
   requestOptions
 )
 .then(response => response.json())
@@ -46,7 +46,7 @@ let response = await fetch(
         component: () => import('../views/AddOutcome.vue'),  
     }),
 
-    data.data.truck_menu.forEach((item, index) => {
+    data.data.nobel_mm_uji_hasil.forEach((item, index) => {
       
           routes.push({
             path: item.path,

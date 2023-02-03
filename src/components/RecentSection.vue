@@ -39,19 +39,19 @@
             >
               <div>
                 <h3 class="text-sm font-medium leading-5">
-                {{ transaction.namamenu }}
+                {{ transaction.nama }}
                 </h3>
 
                 <ul
                   class="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500"
                 >
-                  <li>{{ transaction.memo }}</li>
+                  <li>{{ transaction.judul_tesis }}</li>
                 </ul>
               </div>
               <div>
                 <Chip :type="!transaction.isIncome ? 'danger': 'success'">
                   
-              <router-link :to="{path:  transaction.path}">View </router-link>
+                <router-link :to="{path:  transaction.path}">View </router-link>
                 </Chip>
               </div>
               <!-- <a
@@ -84,9 +84,9 @@ const transactionStore = useTransactionStore();
 const { allTransaction, incomeTransaction, outComeTransaction } = storeToRefs(transactionStore);
 
 const categories = ref({
-  "Semua Menu": allTransaction,
-  Accounting: incomeTransaction,
-  Laporan: outComeTransaction
+  "Uji Hasil": allTransaction,
+  "Uji Proposal": incomeTransaction,
+  "Uji Tutup" : outComeTransaction
 })
 
 function klikMenu(name) {

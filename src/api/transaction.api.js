@@ -5,7 +5,7 @@ import apiKey from '../modules/config'
 const user = localStorage.getItem('token')
 // eslint-disable-next-line no-undef
 
-const res = 'truck_menu/all'
+const res = 'nobel_mm_uji_hasil/all'
 export function getTransactions ()
 {
     //return axios.get(res, { headers: { Authorization: `Bearer ${user}` } })
