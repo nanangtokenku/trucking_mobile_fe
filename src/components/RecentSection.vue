@@ -38,9 +38,9 @@
               class="relative flex justify-between p-3 rounded-md hover:bg-coolGray-100"
             >
               <div>
-                <h3 class="text-sm font-medium leading-5">
+                <h3 class="text-sm font-medium leading-5"><b>
                 {{ transaction.nama }}
-                </h3>
+                </b></h3>
 
                 <ul
                   class="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500"
