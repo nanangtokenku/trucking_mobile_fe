@@ -39,13 +39,13 @@
             >
               <div>
                 <h3 class="text-sm font-medium leading-5"><b>
-                {{ transaction.nama }}
+                {{ transaction.namamenu }}
                 </b></h3>
 
                 <ul
                   class="flex mt-1 space-x-1 text-xs font-normal leading-4 text-coolGray-500"
                 >
-                  <li>{{ transaction.judul_tesis }}</li>
+                  <li>{{ transaction.memo }}</li>
                 </ul>
               </div>
               <div>
@@ -84,9 +84,9 @@ const transactionStore = useTransactionStore();
 const { allTransaction, incomeTransaction, outComeTransaction } = storeToRefs(transactionStore);
 
 const categories = ref({
-  "Uji Hasil": allTransaction,
-  "Uji Proposal": incomeTransaction,
-  "Uji Tutup" : outComeTransaction
+  "All Menu": allTransaction,
+  "Accounting": incomeTransaction,
+  "Profile" : outComeTransaction
 })
 
 function klikMenu(name) {
