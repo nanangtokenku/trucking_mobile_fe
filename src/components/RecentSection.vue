@@ -63,7 +63,7 @@
               /> -->
             </li>
           </ul>
-          <span v-else>Belum ada transaksi...</span>
+          <span v-else>Belum ada Data...</span>
         </TabPanel>
       </TabPanels>
     </TabGroup>
